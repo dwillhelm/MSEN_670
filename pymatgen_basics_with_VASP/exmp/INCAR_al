@@ -1,0 +1,6 @@
+Title
+ENCUT = 250
+ISMEAR = 1
+SIGMA = 0.1
+PREC = Normal
+ALGO = Fast
