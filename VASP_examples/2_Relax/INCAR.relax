@@ -1,0 +1,25 @@
+Title: 
+PREC  = Accurate 
+LREAL = Auto
+NPAR  = 4
+LWAVE  = .FALSE.
+LCHARG = .FALSE. 
+
+# M_FIXLATVEC = 0 0 1 # ignore this tag
+
+# DOS 
+ISMEAR = 1      # Most MXene are metallics 
+SIGMA  = 0.1    # comment 
+
+# Electronic Relaxation
+ENCUT  = 500 	# Highest ENMAX = 400 eV  
+EDIFF  = 1e-6  
+
+# Ionic Relaxation
+NSW    = 300
+ISIF   = 3
+IBRION = 2
+EDIFFG = -0.02
+
+ISPIN  = 1      # Spin-polarized OFF,  magnetic moments
+ISYM   = 1 	# Symm OFF 

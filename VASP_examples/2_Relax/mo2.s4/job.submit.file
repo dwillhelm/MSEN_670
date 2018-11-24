@@ -1,0 +1,36 @@
+#!/bin/bash
+#BSUB -n 20
+#BSUB -R 'span[ptile=20]'
+#BSUB -R "rusage[mem=2500]"  #Request 2560MB per process (CPU) for the job
+#BSUB -M 2500
+#BSUB -W 08:00
+#BSUB -x#
+
+
+---------------------- sys setup ----------------------#
+module purge
+#module load VASP/5.4.1-intel-2016b
+# module load VASP/5.3.5-intel-2015B
+module load ictce/7.1.2 
+export I_MPI_FABRICS='shm:ofa'
+
+
+echo ${J}
+WORKDIR=`pwd`
+
+#---------------------- job setup ----------------------#
+cd ${WORKDIR}
+log=${WORKDIR}/job.txt
+echo "job id:    "${J} > ${log}
+echo "job start: "`date` >> ${log}
+echo "work directory: "$WORKDIR >> $log
+topdir=`pwd`
+
+EXEC=~/bin/vasp.5.3.3.std
+mpirun $EXEC >> log.txt
+#mpirun vasp >> log.txt
+
+
+
+echo "job end:   "`date` >> ${log}
+exit

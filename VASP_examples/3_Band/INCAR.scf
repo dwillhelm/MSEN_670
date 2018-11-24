@@ -1,0 +1,26 @@
+SYSTEM = 
+PREC   = Accurate
+LCHARG = T   # output charge density
+LWAVE  = T   # output wavefunctions
+
+M_FIXLATVEC = 0 0 1
+
+# DOS 
+ISMEAR = 0  # Set to 0 for a general screening parameter
+SIGMA  = 0.05 # small sigma for general screening avoiding issues of smearing
+
+# Electronic 
+ENCUT  = 500 # highest ENMAXX ~ 400 : good for this run
+EDIFF  = 1.0E-06
+
+# Ionic 
+IBRION = 2 # determines how ions are moved IBIRON = 2 is good genral tag
+ISIF   = 3
+NSW    = 0
+
+NEDOS  = 5000  # num of grib points of DOS
+EMIN   = -20
+EMAX   = 20 
+
+ISPIN  = 1   # no spin calculation
+ISYM   = 0   # symm off
