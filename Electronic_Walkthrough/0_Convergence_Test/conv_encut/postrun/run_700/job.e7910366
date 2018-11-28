@@ -1,0 +1,4 @@
+	NOTE: As of 4/1/2015, MKLROOT defined in this module has been changed 
+	From: /software/easybuild/software/imkl/11.2.0.090-iimpi-7.1.2 
+	 To: /software/easybuild/software/imkl/11.2.0.090-iimpi-7.1.2/mkl 
+/home/willhelmd/.lsbatch/1543382493.7910366.shell: line 49: p: command not found

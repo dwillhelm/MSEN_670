@@ -1,0 +1,19 @@
+Relaxation 
+PREC = Normal
+LWAVE = .FALSE.
+LCHARG = .FALSE. 
+ALGO = FAST
+
+ENCUT = 700
+EDIFF = 1e-6 
+
+ISMEAR = 0 
+SIGMA = 0.1
+
+NSW = 300
+IBRION = 2
+EDIFFG = -0.02
+ISIF = 3  
+
+ISPIN = 1 	# Non-spin Polarized Calc
+ISYM = 1  	# Symm is ON

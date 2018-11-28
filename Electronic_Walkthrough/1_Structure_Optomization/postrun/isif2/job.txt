@@ -1,0 +1,4 @@
+job id:    
+job start: Wed Nov 28 00:58:56 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/1_Structure_Optomization/postrun/isif2
+job end:   Wed Nov 28 00:59:05 CST 2018

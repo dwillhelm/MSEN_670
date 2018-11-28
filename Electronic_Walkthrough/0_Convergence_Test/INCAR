@@ -1,0 +1,15 @@
+ENCUT/KPOINTS CONVG
+PREC = Normal
+LWAVE = .FALSE.
+LCHARG = .FALSE. 
+ALGO = FAST
+
+NSW = 0 	# Static Run
+IBRION = -1 	# Static Run 
+
+ISMEAR = 0 	# Use 0 for semiconductors/insulators 
+SIGMA = 0.2
+
+
+ISPIN = 1 	# Non-spin Polarized Calc
+ISYM = 1  	# Symm is ON

@@ -1,0 +1,38 @@
+SYSTEM =
+PREC   = Accurate
+LREAL  = Auto
+NPAR   = 4
+LWAVE  = .FALSE.
+LCHARG = .FALSE.
+
+ISTART = 1   # restart a job using previous WAVECAR/CHGCAR
+ICHARG = 11  # read charge from file
+LORBIT = 11  # project wavefunctions to atom site:s,p,d orbitals
+LMAXMIX = 4
+
+M_FIXLATVEC = 0 0 1
+
+# DOS 
+ISMEAR = 0  # metal 
+SIGMA  = 0.1  # commment 
+
+NEDOS  = 5000
+EMIN   = -20 
+EMAX   = 20
+
+# Electronic 
+ENCUT  = 500
+IBRION = 2
+
+# Ionic 
+ISIF   = 3
+NSW    = 0
+EDIFF  = 1.0E-06
+NBANDS = 80   # num of bands, needs many bands for opitcal properties
+
+# Optics
+LOPTICS = T
+CSHIFT  = 0.1
+
+ISPIN  = 1  # yes spin calculation
+ISYM = 0 

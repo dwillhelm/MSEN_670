@@ -1,0 +1,4 @@
+job id:    
+job start: Tue Nov 27 23:21:42 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/0_Convergence_Test/conv_encut/postrun/run_600
+job end:   Tue Nov 27 23:21:48 CST 2018

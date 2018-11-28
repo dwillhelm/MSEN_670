@@ -1,0 +1,34 @@
+System : 
+PREC   = Accurate
+LREAL  = Auto 
+LWAVE  = .FALSE.
+LCHARG = .FALSE. 
+
+ISTART = 1   # restart a job using previous WAVECAR/CHGCAR
+ICHARG = 11  # read charge from file
+LORBIT = 11  # project wavefunctions to atom site:s,p,d orbitals
+LMAXMIX = 4
+
+M_FIXLATVEC = 0 0 1
+
+# DOS 
+ISMEAR = 1    	# metal
+SIGMA  = 0.1
+
+NEDOS  = 5000
+EMIN   = -20 
+EMAX   = 20
+
+# Electronic 
+ENCUT  = 500
+IBRION = 2
+
+# Ionic
+ISIF   = 3
+NSW    = 0
+EDIFF  = 1.0E-06
+NBANDS = 80 	# ~ 15 valence 
+
+ISPIN  = 0  # Non-spin calculation
+ISYM   = 1  # Symm ON  
+

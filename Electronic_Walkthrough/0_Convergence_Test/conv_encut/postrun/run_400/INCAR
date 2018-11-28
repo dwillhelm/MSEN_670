@@ -1,0 +1,11 @@
+ALGO = Fast
+ENCUT = 400
+IBRION = -1
+ISMEAR = 0
+ISPIN = 1
+ISYM = 1
+LCHARG = False
+LWAVE = False
+NSW = 0
+PREC = Normal
+SIGMA = 0.2

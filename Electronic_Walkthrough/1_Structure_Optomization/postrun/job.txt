@@ -1,0 +1,4 @@
+job id:    
+job start: Wed Nov 28 00:58:23 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/1_Structure_Optomization/postrun
+job end:   Wed Nov 28 00:58:39 CST 2018

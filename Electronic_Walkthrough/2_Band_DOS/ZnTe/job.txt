@@ -1,0 +1,4 @@
+job id:    
+job start: Wed Nov 28 13:03:34 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/2_Band_DOS/ZnTe
+job end:   Wed Nov 28 13:08:24 CST 2018

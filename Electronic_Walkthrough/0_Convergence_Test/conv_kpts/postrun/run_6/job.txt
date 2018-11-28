@@ -1,0 +1,4 @@
+job id:    
+job start: Tue Nov 27 23:29:32 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/0_Convergence_Test/conv_kpts/postrun/run_6
+job end:   Tue Nov 27 23:29:36 CST 2018

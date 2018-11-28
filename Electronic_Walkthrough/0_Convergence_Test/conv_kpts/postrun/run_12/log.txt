@@ -1,0 +1,48 @@
+ running on   20 total cores
+ distrk:  each k-point on   20 cores,    1 groups
+ distr:  one band on    1 cores,   20 groups
+ using from now: INCAR     
+ vasp.5.3.3 18Dez12 (build Dec 13 2014 13:36:02) complex                        
+  
+ POSCAR found type information on POSCAR  Ga
+ POSCAR found :  1 types and       8 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend that you set                      |
+|        NPAR = 4 - approx SQRT( number of cores)                             |
+|      (number of cores/NPAR must be integer)                                 |
+|      This setting will greatly improve the performance of VASP for DFT.     |
+|      The default NPAR=number of cores might be grossly inefficient          |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing.                                                   |
+|      Unfortunately you need to use the default for hybrid, GW and RPA       |
+|      calculations.                                                          |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.108181159748E+02    0.10818E+02   -0.41585E+03  2260   0.315E+02
+DAV:   2    -0.206148291658E+02   -0.31433E+02   -0.30924E+02  3580   0.591E+01
+DAV:   3    -0.210218155760E+02   -0.40699E+00   -0.40652E+00  2360   0.916E+00
+DAV:   4    -0.210226608935E+02   -0.84532E-03   -0.84524E-03  4260   0.366E-01
+DAV:   5    -0.210226609302E+02   -0.36688E-07   -0.36767E-07  2280   0.212E-03    0.280E+00
+RMM:   6    -0.209366645628E+02    0.85996E-01   -0.77789E-03  2240   0.650E-01    0.174E+00
+RMM:   7    -0.208901059263E+02    0.46559E-01   -0.22285E-02  2244   0.106E+00    0.859E-02
+RMM:   8    -0.208904117651E+02   -0.30584E-03   -0.43828E-04  1972   0.976E-02    0.196E-02
+RMM:   9    -0.208904514317E+02   -0.39667E-04   -0.81759E-05  1461   0.466E-02
+   1 F= -.20890451E+02 E0= -.20839854E+02  d E =-.101195E+00

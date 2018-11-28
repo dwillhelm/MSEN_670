@@ -1,0 +1,24 @@
+SYSTEM = 
+PREC   = Accurate
+LCHARG = T   # output charge density
+LWAVE  = T   # output wavefunctions
+
+# DOS 
+ISMEAR = 1  # is metal
+SIGMA  = 0.01 
+
+# Electronic 
+ENCUT  = 520  # highest ENMAXX ~ 400 : good for this run
+EDIFF  = 1.0E-06
+
+# Ionic 
+IBRION = -1 
+ISIF   = 3
+NSW    = 0
+
+NEDOS  = 5000  # num of grib points of DOS
+EMIN   = -20
+EMAX   = 20 
+
+ISPIN  = 1   # no spin calculation
+ISYM   = 1   # symm ON

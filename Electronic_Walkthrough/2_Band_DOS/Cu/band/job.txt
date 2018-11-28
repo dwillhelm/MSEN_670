@@ -1,0 +1,3 @@
+job id:    
+job start: Wed Nov 28 11:32:56 CST 2018
+work directory: /home/willhelmd/job/Electronic_Walkthrough/2_Band_DOS/Cu

@@ -1,0 +1,91 @@
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@nxt2028>
+Subject: Job 7911082: <job> in cluster <Main_Compute> Done
+
+Job <job> was submitted from host <login1> by user <willhelmd> in cluster <Main_Compute>.
+Job was executed on host(s) <20*nxt2028>, in queue <sn_regular>, as user <willhelmd> in cluster <Main_Compute>.
+</home/willhelmd> was used as the home directory.
+</home/willhelmd/job/Electronic_Walkthrough/2_Band_DOS/Cu> was used as the working directory.
+Started at Wed Nov 28 11:32:49 2018
+Results reported on Wed Nov 28 11:34:05 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 20
+#BSUB -R 'span[ptile=20]'
+#BSUB -R "rusage[mem=2500]"  #Request 2560MB per process (CPU) for the job
+#BSUB -M 2500
+#BSUB -W 02:00
+#BSUB -x
+#BSUB -J job
+#BSUB -o job.o%J
+#BSUB -e job.e%J
+#BSUB -L /bin/bash
+#BSUB -u willhelmd@tamu.edu
+#BSUB -R "select[nxt]"    # node-type: nxt, mem256gb, gpu, phi, mem1t, mem2t ...
+
+#BSUB -P 082813538754           # Qian - 200 000 SUs
+##BSUB -P 082813539737          # Cagin - 100 000 SUs
+##BSUB -P 082813535882          # Qian - 5000 SUs
+
+#---------------------- sys setup ----------------------#
+module purge
+#module load VASP/5.4.1-intel-2016b
+# module load VASP/5.3.5-intel-2015B
+module load ictce/7.1.2 
+export I_MPI_FABRICS='shm:ofa'
+
+
+echo ${J}
+WORKDIR=`pwd`
+
+#---------------------- job setup ----------------------#
+cd ${WORKDIR}
+log=${WORKDIR}/job.txt
+echo "job id:    "${J} > ${log}
+echo "job start: "`date` >> ${log}
+echo "work directory: "$WORKDIR >> $log
+topdir=`pwd`
+
+EXEC=~/bin/vasp.5.3.3.std
+
+# jobs=( relax scf band )
+
+job=scf
+cp INCAR.$job INCAR
+cp KPOINTS.$job KPOINTS
+mpirun $EXEC > log.$job.txt
+str=`grep "General timing" OUTCAR`
+if [ ! -z "$str" ]; then
+  touch done.$job
+  mkdir $job; cp * $job/
+else
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1343.63 sec.
+    Max Memory :                                 818 MB
+    Average Memory :                             628.91 MB
+    Total Requested Memory :                     50000.00 MB
+    Delta Memory :                               49182.00 MB
+    Max Processes :                              26
+    Max Threads :                                47
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <job.e7911082> for stderr output of this job.
+
